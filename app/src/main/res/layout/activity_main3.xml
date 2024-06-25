@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_textbox"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настроевички"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/izmenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Измените имя пжпжп"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/natur" />
+
+    <TextView
+        android:id="@+id/parol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Измените parol пжпжп"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/izmenname" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="35dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_textbox"
+        android:text="Именирование"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+
+        />
+
+    <EditText
+        android:id="@+id/anme_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="35dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_textbox"
+        android:text="Paroliрование"
+        app:layout_constraintBottom_toTopOf="@+id/password_input"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нереальный прикол в нереальной зоне"
+        app:layout_constraintBottom_toTopOf="@+id/anme_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_textbox"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/natur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Натуральность"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:text="Сохранение сохранение сохранение сохранение"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="100dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
